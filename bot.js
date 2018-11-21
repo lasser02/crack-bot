@@ -12,7 +12,7 @@ bot.on('message', msg  => {
     const command = args.shift().toLowerCase();
    
     if (command == "hru") {
-    if (!args[1]) return msg.channel.send("i'm good thx for asking")
+    if (!args[0]) return msg.channel.send("im good thx for asking")
     const saytxt = args.join(" ");
     msg.channel.send(saytxt)
     };
